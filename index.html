@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNB Apparel</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo-container {
+            width: 100%;
+            background: black;
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .logo-container img {
+            width: 300px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: gray;
+        }
+        .shop-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .social a {
+            text-decoration: none;
+            font-size: 20px;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div><input type="text" placeholder="Search..." /></div>
+        <div class="nav-links">
+            <a href="#shop">Shop</a>
+            <a href="#new">New Arrivals</a>
+            <a href="#learn-more">Learn More</a>
+        </div>
+    </div>
+    
+    <div class="logo-container">
+        <img src="https://i.imgur.com/07KNehc.png" alt="SNB Apparel Logo">
+    </div>
+    
+    <div id="shop" class="shop-section">
+        <div class="product">Product 1</div>
+        <div class="product">Product 2</div>
+        <div class="product">Product 3</div>
+        <div class="product">Product 4</div>
+    </div>
+    
+    <div id="learn-more" class="footer">
+        <h3>About SNB Apparel</h3>
+        <p>Contact us: info@snbapparel.com</p>
+        <div class="social">
+            <a href="https://www.tiktok.com/@snbapparel">TikTok</a>
+        </div>
+        <div>
+            <h3>Subscribe for Updates</h3>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+</body>
+</html>
